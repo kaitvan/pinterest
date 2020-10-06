@@ -1,0 +1,20 @@
+{
+    "board1": {
+      "boardId": 1,
+      "name": "Recipes",
+      "imageUrl": "https://www.budgetbytes.com/wp-content/uploads/2019/02/Creamy-White-Bean-and-Spinach-Quesadillas-V.jpg",
+      "userId": ""
+    },
+    "board2": {
+      "boardId": 2,
+      "name": "Project Ideas",
+      "imageUrl": "https://honestlywtf.com/wp-content/uploads/2019/01/tasselwallhanging42-1.webp",
+      "userId": ""
+    },
+    "board3": {
+      "boardId": 3,
+      "name": "Travel",
+      "imageUrl": "https://cdn.wearetravelgirls.com/spai/w_1354+q_glossy+ret_img+to_webp/https://wearetravelgirls.com/wp-content/uploads/2020/07/Damrak.jpeg",
+      "userId": ""
+    }
+  }

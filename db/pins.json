@@ -1,0 +1,50 @@
+{
+    "pin1": {
+      "pinId": 1,
+      "url": "https://www.budgetbytes.com/creamy-white-bean-and-spinach-quesadillas/",
+      "imageUrl": "https://www.budgetbytes.com/wp-content/uploads/2019/02/Creamy-White-Bean-and-Spinach-Quesadillas-V.jpg",
+      "description": "Creamy White Bean and Spinach Quesadillas",
+      "boardId": 1,
+      "userId": ""
+    },
+    "pin2": {
+      "pinId": 2,
+      "url": "https://honestlywtf.com/diy/diy-fringed-macrame-plant-hanger/",
+      "imageUrl": "https://honestlywtf.com/wp-content/uploads/2019/10/macrameplanthanger37.webp",
+      "description": "DIY Macrame Plant Hanger",
+      "boardId": 2,
+      "userId": ""
+    },
+    "pin3": {
+      "pinId": 3,
+      "url": "https://wearetravelgirls.com/amsterdam-netherlands/",
+      "imageUrl": "https://cdn.wearetravelgirls.com/spai/w_1354+q_glossy+ret_img+to_webp/https://wearetravelgirls.com/wp-content/uploads/2020/07/Damrak.jpeg",
+      "description": "The Ultimate Travel Guide to Amsterdam",
+      "boardId": 3,
+      "userId": ""
+    },
+    "pin4": {
+      "pinId": 4,
+      "url": "https://www.budgetbytes.com/vegan-creamy-mushroom-ramen/",
+      "imageUrl": "https://www.budgetbytes.com/wp-content/uploads/2019/09/Vegan-Creamy-Mushroom-Ramen-V2.jpg",
+      "description": "Vegan Creamy Mushroom Ramen",
+      "boardId": 1,
+      "userId": ""
+    },
+    "pin5": {
+      "pinId": 5,
+      "url": "https://honestlywtf.com/diy/diy-tassel-wall-hanging-2/",
+      "imageUrl": "https://honestlywtf.com/wp-content/uploads/2019/01/tasselwallhanging42-1.webp",
+      "description": "DIY Tassel Wall Hanging",
+      "boardId": 2,
+      "userId": ""
+    },
+    "pin6": {
+      "pinId": 6,
+      "url": "https://wearetravelgirls.com/south-korea-one-week-itinerary/",
+      "imageUrl": "https://cdn.wearetravelgirls.com/spai/w_1352+q_glossy+ret_img+to_webp/https://wearetravelgirls.com/wp-content/uploads/2019/03/one-week-south-korea-itinerary-4.jpg",
+      "description": "South Korea: One-Week Itinerary",
+      "boardId": 3,
+      "userId": ""
+    }
+  }
