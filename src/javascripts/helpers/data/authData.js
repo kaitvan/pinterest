@@ -2,13 +2,13 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import signOut from '../../components/navBar';
 import auth from '../../components/auth';
-import viewHelper from '../viewHelper';
+import viewListener from '../viewHelper';
 
 const checkSignInStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       signOut.buildSignOutButton();
-      viewHelper.viewHelper('boards');
+      viewListener.viewListener('boards');
     } else {
       auth.signIn();
       $('#sign-out-container').html('');
