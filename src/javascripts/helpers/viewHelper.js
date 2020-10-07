@@ -14,7 +14,7 @@ const viewHelper = (id, arg) => {
 
 const viewListener = (view) => {
   viewHelper(view);
-  $('body').on('click', '.board-card', (e) => {
+  $('body').on('click', '.card.board', (e) => {
     const boardId = e.currentTarget.id;
     viewHelper('pins', boardId);
   });
