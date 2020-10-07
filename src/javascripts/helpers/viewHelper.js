@@ -18,6 +18,9 @@ const viewListener = (view) => {
     const boardId = e.currentTarget.id;
     viewHelper('pins', boardId);
   });
+  $('body').on('click', '#logo-btn', () => {
+    viewHelper('boards');
+  });
 };
 
 export default { viewListener };
