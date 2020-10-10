@@ -2,6 +2,7 @@ import addBoardView from '../components/views/addBoardView';
 import addPinView from '../components/views/addPinView';
 import boardsView from '../components/views/boardsView';
 import pinsView from '../components/views/pinsView';
+import updatePinView from '../components/views/updatePinView';
 
 const viewHelper = (id, arg) => {
   switch (id) {
@@ -13,6 +14,8 @@ const viewHelper = (id, arg) => {
       return addBoardView.addBoardView();
     case 'add-pin':
       return addPinView.addPinView();
+    case 'update-pin':
+      return updatePinView.updatePinView(arg);
     default:
       return console.warn('nothing clicked');
   }
@@ -39,6 +42,16 @@ const viewListener = (view) => {
     viewHelper('add-pin');
   });
   $('body').on('click', '#add-pin-submit', () => {
+    const boardId = $('#boardSelection').val();
+    setTimeout(() => {
+      viewHelper('pins', boardId);
+    }, 1000);
+  });
+  $('body').on('click', '.edit-btn', (e) => {
+    const pinId = e.currentTarget.id;
+    viewHelper('update-pin', pinId);
+  });
+  $('body').on('click', '#update-pin-submit', () => {
     const boardId = $('#boardSelection').val();
     setTimeout(() => {
       viewHelper('pins', boardId);
