@@ -17,10 +17,9 @@ const getPins = (boardId) => new Promise((resolve, reject) => {
 });
 
 const getSinglePin = (pinId) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/pins.json?orderBy="pinId"&equalTo="${pinId}"`)
+  axios.get(`${baseUrl}/pins/${pinId}.json`)
     .then((response) => {
-      const pin = Object.values(response.data);
-      const thisPin = pin[0];
+      const thisPin = response.data;
       resolve(thisPin);
     }).catch((error) => reject(error));
 });
@@ -38,4 +37,12 @@ const addPin = (data) => axios.post(`${baseUrl}/pins.json`, data)
     axios.patch(`${baseUrl}/pins/${response.data.name}.json`, update);
   }).catch((error) => console.warn(error));
 
-export default { getPins, deletePin, addPin };
+const updatePin = (pinId, pinObject) => axios.patch(`${baseUrl}/pins/${pinId}.json`, pinObject);
+
+export default {
+  getPins,
+  deletePin,
+  addPin,
+  updatePin,
+  getSinglePin
+};

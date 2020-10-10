@@ -5,6 +5,7 @@ const pinMaker = (pinObject) => {
                       <a href="${pinObject.url}"><img class="card-img-top" src="${pinObject.imageUrl}" alt=${pinObject.description}"></a>
                       <div class="card-body d-flex justify-content-between">
                         <p class="text-left">${pinObject.description}</p>
+                        <i class="fas fa-pen edit-btn" id="${pinObject.pinId}"></i>
                         <i class="fas fa-trash-alt delete-btn" id="${pinObject.pinId}"></i>
                       </div>
                     </div>`;
