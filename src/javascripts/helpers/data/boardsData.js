@@ -18,7 +18,7 @@ const getAllBoards = () => new Promise((resolve, reject) => {
 });
 
 const getSingleBoard = (boardId) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/boards.json?orderBy="boardId"&equalTo=${Number(boardId)}`)
+  axios.get(`${baseUrl}/boards.json?orderBy="boardId"&equalTo="${boardId}"`)
     .then((response) => {
       const board = Object.values(response.data);
       const thisBoard = board[0];
@@ -36,9 +36,15 @@ const deleteBoard = (boardId) => {
     .then(() => {
       getSingleBoard(boardId)
         .then((response) => {
-          axios.delete(`${baseUrl}/boards/board${response.boardId}.json`);
+          axios.delete(`${baseUrl}/boards/${response.boardId}.json`);
         });
     });
 };
 
-export default { getAllBoards, deleteBoard };
+const addBoard = (data) => axios.post(`${baseUrl}/boards.json`, data)
+  .then((response) => {
+    const update = { boardId: response.data.name };
+    axios.patch(`${baseUrl}/boards/${response.data.name}.json`, update);
+  }).catch((error) => console.warn(error));
+
+export default { getAllBoards, deleteBoard, addBoard };
